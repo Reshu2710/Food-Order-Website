@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', true);
-const mongoURI = ""
+const mongoURI = process.env.Mongo_Uri
 const mongoDB = async()=>{
     await mongoose.connect(mongoURI, {useNewUrlParser: true}, async(err,result)=>{
         if(err) console.log("---",err)
