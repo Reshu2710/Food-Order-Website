@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', true);
-const mongoURI = "mongodb://gofoodmerns:hello123@ac-togpsjr-shard-00-00.qziol56.mongodb.net:27017,ac-togpsjr-shard-00-01.qziol56.mongodb.net:27017,ac-togpsjr-shard-00-02.qziol56.mongodb.net:27017/food?ssl=true&replicaSet=atlas-rju4c0-shard-0&authSource=admin&retryWrites=true&w=majority"
-
+const mongoURI = ""
 const mongoDB = async()=>{
     await mongoose.connect(mongoURI, {useNewUrlParser: true}, async(err,result)=>{
         if(err) console.log("---",err)
